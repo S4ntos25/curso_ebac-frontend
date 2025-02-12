@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  header {
+    background-color: #182C61;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+  header .branding img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 1rem;
+  }
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .menu a:hover {
+    color: rgb(31.7157024793, 58.1454545455, 128.1842975207);
+    transform: scale(1.05);
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .product-item h4 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+  }
+  .product-item p {
+    font-size: 14px;
+    color: #666;
+  }
+  .product-item .product-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #182C61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  .product-item .product-button:hover {
+    background-color: rgb(13.8842975207, 25.4545454545, 56.1157024793);
+  }
+  
+  footer {
+    background-color: #f5f6fa;
+    color: #182C61;
+    padding: 20px 0;
+    margin-top: auto;
+  }
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .footer-content p {
+    margin: 0;
+    font-size: 14px;
+  }
+  footer .footer-content .footer-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  footer .footer-content .footer-menu a {
+    color: #182C61;
+    text-decoration: none;
+  }
+  footer .footer-content .footer-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 10px;
+    }
+  }
